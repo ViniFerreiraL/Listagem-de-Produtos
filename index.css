@@ -1,0 +1,152 @@
+:root {
+  --primaryColor: #5a639c;
+  --darkColor: #1b1725;
+  --backgrounColor: #376996;
+  --lightColor: #ffffff;
+  --fonteFjalla: "Fjalla One", sans-serif;
+}
+
+body {
+  font-size: 2rem;
+  font-family: var(--fonteFjalla);
+  color: var(--darkColor);
+  background-color: var(--backgrounColor);
+}
+
+.loginList {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--lightColor);
+}
+
+.classTable > * {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.classTable tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.fullResponse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.contentListProduct {
+  background-color: var(--lightColor);
+  width: 700px;
+  height: 100%;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.dialog {
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+  position: relative;
+  background-color: var(--primaryColor);
+}
+.optionButton {
+  display: flex;
+  flex-direction: row;
+}
+
+form input {
+  font-size: 2rem;
+  width: 100%;
+  border: none;
+  background-color: inherit;
+  border-bottom: 5px solid var(--darkColor);
+  padding: 1rem 0.25rem;
+}
+
+input::placeholder {
+  color: var(--darkColor);
+}
+
+fieldset legend,
+fieldset div {
+  margin-bottom: 2rem;
+}
+
+.closeModal {
+  border: 2px solid var(--darkColor);
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.radioButton {
+  display: flex;
+  flex-direction: column;
+}
+
+.radioButton label {
+  display: flex;
+
+  align-items: center;
+  gap: 0.25rem;
+  flex-direction: row-reverse;
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+.radioButton label input {
+  width: fit-content;
+}
+
+.idButtonYes {
+  display: flex;
+  flex-direction: column;
+}
+.idButtonNo {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonCadastrar {
+  font-size: 2rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.divList {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.prodList {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.prodList h2 {
+  margin-bottom: 1rem;
+}
+
+.openModal {
+  border-radius: 1rem;
+  font-size: 2rem;
+  padding: 1rem;
+  min-width: 300px;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  border: none;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.464);
+}
+
+.openModal.active {
+  transform: translateY(5px);
+  transition: 0.2s ease-in-out;
+  box-shadow: none;
+}
